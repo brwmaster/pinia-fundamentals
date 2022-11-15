@@ -2,8 +2,10 @@
 import TheHeader from "@/components/TheHeader.vue";
 import ProductCard from "@/components/ProductCard.vue";
 import { useProductStore } from "./stores/productStore";
+import { useCartStore } from "./stores/CartStore";
 
 const productsStore = useProductStore();
+const cartStore = useCartStore();
 
 productsStore.getProducts();
 </script>
@@ -16,6 +18,7 @@ productsStore.getProducts();
         v-for="product in productsStore.products"
         :key="product.name"
         :product="product"
+        @addToCart="cartStore.addItems($event, product)"
       />
     </ul>
   </div>
