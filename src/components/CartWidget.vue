@@ -20,8 +20,10 @@ const active = ref(false);
       <div v-if="!cartStore.isEmpty > 0">
         <ul class="items-in-cart">
           <CartItem
-            :product="{ name: 'Dried Pineapple', price: 5 }"
-            :count="5"
+            v-for="(items, name) in cartStore.grouped"
+            :key="name"
+            :product="items[0]"
+            :count="cartStore.groupCount(name)"
             @updateCount=""
             @clear=""
           />
