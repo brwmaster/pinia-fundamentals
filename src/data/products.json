@@ -2,7 +2,7 @@
   {
     "name": "Plain Ol' Pineapple",
     "image": "pineapple-original.jpg",
-    "price" : 4
+    "price": 4
   },
   {
     "name": "Dried Pineapple",
@@ -12,11 +12,11 @@
   {
     "name": "Pineapple Gum",
     "image": "pineapple-gum.jpg",
-    "price" : 3
+    "price": 3
   },
   {
     "name": "Pineapple T-Shirt",
     "image": "pineapple-tshirt.jpg",
-    "price" : 12
+    "price": 12
   }
 ]
