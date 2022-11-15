@@ -4,6 +4,8 @@ import ProductCard from "@/components/ProductCard.vue";
 import { useProductStore } from "./stores/productStore";
 
 const productsStore = useProductStore();
+
+productsStore.getProducts();
 </script>
 
 <template>
